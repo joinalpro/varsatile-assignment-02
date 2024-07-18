@@ -1,0 +1,38 @@
+@media screen and (max-width:576px) {
+    #icon-burger {
+        display: block;
+        color:white;
+        margin-top: 13px;
+    }
+    .nav-ul-links{
+        display: none;
+    }
+   
+    .header-container, 
+    .header-left-side,
+    .header-right-side{
+        width: 100%;
+    }
+    .header-full-width {
+       width: 90%;
+    }
+    .header-content{
+        flex-direction: column;
+    }
+    .header-title{
+        font-size: 56px;
+        margin-top:40px;
+    }
+    .small-workout-card {
+        left:60%;
+        top:20%;
+        width: 150px;
+        height: 96px;
+    }
+    .small-video-tutorial-card {
+        width: 200px;
+        height: 96px;
+        left: 10%;
+        top:50%;
+    }
+}
