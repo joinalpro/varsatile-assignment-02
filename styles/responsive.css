@@ -10,13 +10,21 @@
    
     .header-container, 
     .header-left-side,
-    .header-right-side{
+    .header-right-side,
+    .habits-content{
         width: 100%;
     }
-    .header-full-width {
+    .header-full-width,
+    .habits-full-width,
+    .training-exercise-container,
+    .meet-our-team-container,
+    .footer-content{
        width: 90%;
     }
-    .header-content{
+    .header-content,
+    .cards,
+    .run-extra-mile-width,
+    .footer-text-area{
         flex-direction: column;
     }
     .header-title{
@@ -34,5 +42,109 @@
         height: 96px;
         left: 10%;
         top:50%;
+    }
+    .habits-full-width {
+        padding-bottom: 60px;
+    }
+    .habits-content {
+        padding-top:5px;
+    }
+    .card-content {
+        width: 60%;
+        margin:15px auto;
+
+        
+    }
+    .habits-content h3 {
+        font-size: 35px;
+    }
+    .run-extra-mile-width {
+        margin:0px 10px 10px 10px;
+        gap:25px;
+    }
+    .run-extra-mile-width{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .running-btn {
+        margin-top: 15px;
+        width: 100%
+    }
+    .run-image {
+        height: 200px;
+    }
+    /* training-exercise-steps start here */
+    .training-exercise-steps {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+    }
+
+    .exercise-1 {
+        background-image: url("../images/exercise1.jpg");
+        background-position: center;
+        background-size: cover;
+        grid-column: 1/span 6;
+        grid-row: 1/span 6;
+    }
+    .exercise-2 {
+        background-image: url("../images/exercise2.png");
+        background-position:cover;
+        background-size:cover;
+        grid-column: 7/span 6;
+        grid-row: 1/span 6;
+    }
+    .exercise-4 {
+        background-image: url("../images/exercise4.png");
+        background-position:cover;
+        background-size:cover;
+        grid-column: 1/span 6;
+        grid-row: 7/span 6;
+
+    }
+    .exercise-5 {
+        background-image: url("../images/exercise5.jpg");
+        background-position:cover;
+        background-size:cover;
+        grid-column: 7/span 6;
+        grid-row: 7/span 6;
+    }
+    .exercise-3,
+    .exercise-6 {
+        display: none;
+    }
+
+    /* our trainer styles start here */
+    .our-trainer {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+    }
+    .trainer-content {
+        padding-bottom: 30px;
+        margin-left: 20px;
+    }
+    .trainer-1,
+    .trainer-4 {
+        display: none;
+    }
+    .footer-text-area {
+        flex-direction: column;
+    }
+    .fitness {
+        padding-top: 50px;
+    }
+    .fitness,
+    .footer-getstarted-middle {
+        width:100%;
+    }
+    .footer-getstarted-middle {
+        margin: 20px 0px;
+    }
+    .footer-text-area {
+        height: 100%;
+    }
+    .footer-bottom p {
+        font-size: 16px;
+        text-align: start;
+        padding: 20px 0px 50px 0px;
     }
 }
