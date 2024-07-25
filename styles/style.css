@@ -301,10 +301,12 @@ nav li a {
 .exercise-1 {
     grid-column: 1/span 3;
     grid-row: 1 /span 6;
-    background-image: url("../images/exercise1.jpg");
+    background-image:url("../images/exercise1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(6, 255, 210, 0.5);
+    background-blend-mode: overlay;
 }
 
 .exercise-2 {
@@ -314,6 +316,8 @@ nav li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(255, 0, 0, 0.3);
+    background-blend-mode: overlay;
 }
 /* .exercise-2 img {
     width: 100%;
@@ -326,6 +330,8 @@ nav li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
 }
 .exercise-4 {
     grid-column: 1/span 5;
@@ -334,6 +340,8 @@ nav li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
 }
 .exercise-5 {
     grid-column: 6/span 3;
@@ -342,6 +350,8 @@ nav li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(66, 255, 0, 0.3);
+    background-blend-mode: overlay;
 }
 .exercise-6 {
     grid-column: 9/span 4;
@@ -350,35 +360,137 @@ nav li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: rgba(0, 71, 255, 0.3);
+    background-blend-mode: overlay;
 }
 /* bmi-calculator-container start here */
-.bmi-calculator-container {
-    backdrop-filter: blur(20px);
-    background: rgba(48, 48, 48, 0.54);
-}
+
 .bmi-calculator-content {
-    width: 70%;
-    margin: 80px auto;
-}
-.bmi-calculator-content {
-    text-align: center;
-}
-.bmi-calculator-content {
-    /* text-align: center; */
     width: 50%;
-    margin: 0 auto;
+    margin: 70px auto;
+
 }
 .bmi-calculator-content h2 {
     color: white;
     font-size: 45px;
+    margin-bottom: 15px;
 }
 .bmi-calculator-content p {
     color: rgba(239, 237, 232, 0.65);
     font-size: 16px;
     font-weight: 400;
-    margin-bottom: 20px;
 }
+.bmi-content-width {
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+}
+.bmi-chart-calculator-container {
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap:20px;
+    height: 500px;
+}
+.bmi-chart {
+    width: 45%;
+    padding-top: 52px;
+}
+.bmi-chart h4 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 52px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+th,td {
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+th {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+}
+.bmi-calculator {
+    width: 55%;
+    padding-top: 52px;
+}
+.bmi-calculator h4 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.bmi-calculator p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.input-text {
 
+}
+input {
+    width: 250.5px;
+    height: 48px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border:none;
+}
+::placeholder {
+    padding-left: 15px;
+}
+.select-option {
+    width: 250.5px;
+    height: 48px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border:none;
+    color:rgba(255, 255, 255, 0.6);
+    padding-left:10px;
+    margin-right:10px;
+}
+.select-activity {
+    width: 515px;
+    height: 48px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border:none;
+    color:rgba(255, 255, 255, 0.6);
+    padding-left:10px;
+    margin-right:10px;
+    margin-bottom: 2.15rem;
+}
+#calculator-btn {
+    padding: 16px 60px 16px 60px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border:none;
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+}
 /* meet our team styles start here */
 .meet-our-team-container {
     width: 70%;

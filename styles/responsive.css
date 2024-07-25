@@ -7,13 +7,16 @@
     .nav-ul-links{
         display: none;
     }
-   
+    .bmi-chart,
+    .bmi-calculator,
     .header-container, 
     .header-left-side,
     .header-right-side,
     .habits-content{
         width: 100%;
     }
+    .bmi-chart-calculator-container,
+    .bmi-calculator-content,
     .header-full-width,
     .habits-full-width,
     .training-exercise-container,
@@ -88,7 +91,7 @@
     }
     .exercise-2 {
         background-image: url("../images/exercise2.png");
-        background-position:cover;
+        background-position: -19cap;
         background-size:cover;
         grid-column: 7/span 6;
         grid-row: 1/span 6;
@@ -112,7 +115,20 @@
     .exercise-6 {
         display: none;
     }
-
+    
+    .bmi-calculator h4, .bmi-chart h4 {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 900;
+    }
+    .input-text {
+        display: flex;
+        gap:10px;
+    }
+    .select-activity {
+        width: 100%;
+    }
     /* our trainer styles start here */
     .our-trainer {
         grid-template-columns: repeat(1, 1fr);
@@ -126,6 +142,7 @@
     .trainer-4 {
         display: none;
     }
+    .bmi-chart-calculator-container,
     .footer-text-area {
         flex-direction: column;
     }
@@ -139,6 +156,7 @@
     .footer-getstarted-middle {
         margin: 20px 0px;
     }
+    .bmi-chart-calculator-container,
     .footer-text-area {
         height: 100%;
     }
