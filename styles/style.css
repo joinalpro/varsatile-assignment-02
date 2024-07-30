@@ -20,7 +20,7 @@ body {
 /* header styles start here */
 .header-container {
     width:100%;
-    background: linear-gradient(180.00deg, rgb(15, 15, 15),rgba(29, 29, 29, 0.784) 70%);
+    background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%);
 }
 .header-full-width {
     width: 70%;
@@ -41,9 +41,9 @@ nav {
 .nav-ul-links{
     justify-content: center;
     align-items: center;
-    border: 1px solid gray;
-    border-radius: 40px;
     padding: 8px 15px 8px 4px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
 }
 nav ul li {
    list-style:none;
@@ -68,12 +68,13 @@ nav li a {
     gap:60px
 }
 .header-left-side {
-    width:60%;
+    width:58%;
 }
 .header-title {
     color: rgb(255, 255, 255);
     font-size: 78px;
     font-weight: 900;
+    line-height: 90px;
 }
 #shape {
     font-family: "Dancing Script", cursive;
@@ -83,7 +84,8 @@ nav li a {
     color: rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
-    margin:28px 0px 20px 0px;
+    margin:28px 0px 28px 0px;
+    line-height: 24px;
 }
 /* button styles here */
 .main-button {
@@ -96,6 +98,7 @@ nav li a {
     border:none;
     color: white;
     margin-right: 15px;
+    font-size: 18px;
 }
 .btn-second {
     padding: 16px 40px 16px 40px;
@@ -103,6 +106,7 @@ nav li a {
     background-color: rgba(0, 0, 0, 0.696);
     border: 1px solid white;
     color: white;
+    font-size: 18px;
 }
 /* header right area */
 .header-right-side {
@@ -116,24 +120,25 @@ nav li a {
 }
 .small-workout-card {
     position:absolute;
-    top:30%;
-    left:55%;
+    top:25%;
+    left:60%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
-    width: 206px;
-    height: 96px;
-    text-align: center;
+    width: 193px;
+    height: 98px;
+    text-align: start;
     padding-top: 15px;
+    padding-left: 24px;
 }
 .small-video-tutorial-card {
     position:absolute;
-    top:72%;
-    left:-8%;
+    top:74%;
+    left:-16%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     background: rgba(48, 48, 48, 0.54);
     width: 206px;
     height: 96px;
@@ -141,8 +146,8 @@ nav li a {
     align-items: center;
 }
 .small-circle{
-    padding: 20px;
-    margin-right: 10px;
+    padding: 16px;
+    margin-right: 8px;
     background: rgb(230, 83, 60);
     border-radius: 50%
 }
@@ -150,15 +155,37 @@ nav li a {
     color:white;
 }
 .small-text h4 {
-    font-size: 24px;
-    font-weight: 600;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 .small-text p {
-    color: rgba(239, 237, 232, 0.65);
-    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
     font-weight: 400;
 }
-
+.small-video-text h4 {
+    color: #FAFAF9;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.3px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+.small-video-text p {
+    color: var(--Text-2, rgba(239, 237, 232, 0.65));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
 /* change your habits section start here */
 
 .habits-container{
